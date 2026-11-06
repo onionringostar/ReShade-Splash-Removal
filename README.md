@@ -42,7 +42,7 @@ This disables the startup splash screen without intentionally disabling the norm
 The build script locates Visual Studio using `vswhere.exe` and uses its command-line build tools.
 
 
-Quick Start (Beginner Guide)
+## Quick Start (Beginner Guide)
 
 No coding or programming knowledge required.
 
