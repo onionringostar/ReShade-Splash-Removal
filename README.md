@@ -41,6 +41,79 @@ This disables the startup splash screen without intentionally disabling the norm
 
 The build script locates Visual Studio using `vswhere.exe` and uses its command-line build tools.
 
+
+Quick Start (Beginner Guide)
+
+No coding or programming knowledge required.
+
+This project builds modified ReShade files for you. Follow these steps:
+
+Step 1 — Download the builder
+
+Download this repository using the green Code button → Download ZIP.
+
+Extract the ZIP file somewhere convenient, such as your Desktop.
+
+You should see two files:
+
+Build-Latest-ReShade.ps1
+
+Build Latest ReShade.bat
+
+Step 2 — Build ReShade
+
+Double-click Build Latest ReShade.bat.
+
+A command window will open and automatically download and build ReShade.
+
+Wait for the process to finish. This can take several minutes.
+
+If everything succeeds, you'll see a success message.
+
+Step 3 — Find your finished files
+
+Open the Builds folder.
+
+Inside, open the folder for the version that was just built (for example, v6.8.0).
+
+You'll find:
+
+ReShade32.dll — for 32-bit applications.
+
+ReShade64.dll — for 64-bit applications.
+
+Step 4 — Install ReShade
+
+Download and install the official ReShade setup from reshade.me.
+
+Select your game and its graphics API during installation.
+
+Open the game's installation folder.
+
+Back up your existing ReShade files before replacing anything.
+
+Replace the appropriate ReShade DLL with the modified DLL you built:
+
+Use ReShade32.dll for 32-bit games.
+
+Use ReShade64.dll for 64-bit games.
+
+Keep your existing ReShade configuration files, including any .ini or .json files.
+
+Important: Vulkan installations use a different installation method from DirectX and OpenGL. Don't blindly replace DLLs for Vulkan; follow the Vulkan installation instructions for your setup.
+
+Step 5 — Done!
+
+Launch your game.
+
+The ReShade startup splash screen should no longer appear, but the normal in-game ReShade overlay should still work using the Home key.
+
+Updating later
+
+Whenever you want to build a newer version of ReShade, simply run Build Latest ReShade.bat again. The script checks for the newest stable version tag and builds it automatically.
+
+
+
 ## How to use
 
 1. Download or clone this repository.
